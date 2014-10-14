@@ -12,10 +12,8 @@ public class slp {
 			System.out.println("You go to the inn.");
 			System.out.println("It costs 75 coins to stay the night.");
 			System.out.println("Would you like to stay the night?");
-			System.out.println("1: Yes");
-			System.out.println("2: No");
 			
-			scn.scan();
+                        askyn.askYesNo();
 			
 			if (glblVar.answer .equals("1")) {
 				System.out.println("You stay the night.");
@@ -33,7 +31,7 @@ public class slp {
 				mnu.Menu();
 			}
 			
-			if (glblVar.answer .equals("2")) {
+			else {
 				mnu.Menu();
 			}
 		}

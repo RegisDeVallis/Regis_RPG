@@ -8,11 +8,10 @@ public class explr {
 	public static void explore() throws Exception {
 		
 		System.out.println("Do you want to explore?");
-		System.out.println("1: Yes");
-		System.out.println("2: No");
-		scn.scan();
 		
-		if (glblVar.answer .equals("1") ) {
+                askyn.askYesNo();
+		
+		if (glblVar.yesno = true ) {
 			glblVar.inTown = false;
 		}
 		else 

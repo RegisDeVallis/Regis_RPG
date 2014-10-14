@@ -10,11 +10,10 @@ public class str {
 		if (glblVar.inTown == false) {
 			System.out.println("You need to travel to a town.");
 			System.out.println("Would you like to travel to a town?");
-			System.out.println("1: Yes");
-			System.out.println("2: No");
-			scn.scan();
 			
-			if (glblVar.answer .equals("1") ) {
+			askyn.askYesNo();
+			
+			if (glblVar.yesno = true ) {
 				trvl.travelAsk();
 			}
 			else 
@@ -81,13 +80,11 @@ public class str {
 				System.out.println("You have enough money.");
 				System.out.println("It will cost $" + armorUpgrade$ + ".");
 				System.out.println("Do you want to upgrade your armor to level " + futureArmorLevel + "?");
-				System.out.println("1: Yes");
-				System.out.println("2: No");
 				
 				
-				scn.scan();
+				askyn.askYesNo();
 				
-				if(glblVar.answer .equals("1")) {
+				if(glblVar.yesno = true) {
 					System.out.println("Upgraded your armor!");
 					
 					glblVar.money = glblVar.money - armorUpgrade$;
@@ -102,7 +99,7 @@ public class str {
 					
 				}
 				
-				if(glblVar.answer .equals("2")) {
+                                else {
 					ask();
 				}
 			}
@@ -123,13 +120,10 @@ public class str {
 				System.out.println("You have enough money.");
 				System.out.println("It will cost $" + damageUpgrade$ + ".");
 				System.out.println("Do you want to upgrade your damage to level " + futureDamageLevel + "?");
-				System.out.println("1: Yes");
-				System.out.println("2: No");
 				
+                                askyn.askYesNo();
 				
-				scn.scan();
-				
-				if(glblVar.answer .equals("1")) {
+				if(glblVar.yesno = true) {
 					System.out.println("Upgraded your damage!");
 					
 					glblVar.money = glblVar.money - damageUpgrade$;
@@ -144,7 +138,7 @@ public class str {
 					
 				}
 				
-				if(glblVar.answer .equals("2")) {
+				else {
 					ask();
 				}
 			}
@@ -157,12 +151,16 @@ public class str {
 		
 		//exit
 		if (glblVar.answer .equals("3")) {
+                    
+                    str.ask();
 			
 		}
 	}
 
-	private static void item() {
-		// TODO Auto-generated method stub
+	private static void item() throws Exception {
+		
+            System.out.println("WIP");
+            str.ask();
 		
 	}
 
@@ -173,16 +171,15 @@ public class str {
 		
 		
 		System.out.println("Would you like to buy food?");
-		System.out.println("1: Yes");
-		System.out.println("2: No");
 		
-		scn.scan();
+                askyn.askYesNo();
 		
 		//yes
-		if(glblVar.answer .equals("1")) {
-			System.out.println("How many packs of food would you like to buy?");
+		if(glblVar.yesno = true) {
+			
 			System.out.println("Packs of food come in 10.");
 			System.out.println("1 pack equals 10 food and 50 coins.");
+                        System.out.println("How many packs of food would you like to buy?");
 			
 			packToBuy = scan.nextInt();
 			int packCost = packToBuy*50;
@@ -200,12 +197,10 @@ public class str {
 			else {
 				System.out.println("You have enough money.");
 				System.out.println("Do you still want to buy it?");
-				System.out.println("1: Yes");
-				System.out.println("2: No");
 				
-				scn.scan();
+                                askyn.askYesNo();
 				
-				if(glblVar.answer .equals("1")) {
+				if(glblVar.yesno = true) {
 					System.out.println("You bought " + packToBuy + " packs of food!");
 					
 					glblVar.food = glblVar.food + (packToBuy*10);
@@ -217,7 +212,7 @@ public class str {
 					ask();
 				}
 				
-				if(glblVar.answer .equals("2")) {
+				else {
 					ask();
 				}
 			}
@@ -233,8 +228,10 @@ public class str {
 		
 	}
 
-	private static void bag() {
-		// TODO Auto-generated method stub
+	private static void bag() throws Exception {
+		
+            System.out.println("WIP");
+            str.ask();
 		
 	}
 }

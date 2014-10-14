@@ -26,8 +26,18 @@ public class ld {
                 System.out.println("Created by Regis_DeVallis");
                 
                 System.out.println("Version 0.0.0.1");
+                
+                System.out.println("Press 1 and Enter to continue.");
+                
+                scn.scan();
+                
+                if (glblVar.answer .equals("1")) {
+                    
+                    mnu.startMenu();
+                    
+                }
 		
-		mnu.startMenu();
+		
 	}
 	
 	public static void loadUser() throws IOException, Exception {
