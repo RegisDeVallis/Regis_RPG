@@ -32,6 +32,7 @@ public class gui {
         TextAreaOutputStream taos = TextAreaOutputStream.getInstance(console); 
         
         jframe.getContentPane().add(console); 
+        //jframe.getContentPane().add(scroll);
         //jframe.getContentPane().add(usrInput); 
         //jframe.getContentPane().add(enter); 
         //jframe.getContentPane().add(healthDisp); 
