@@ -6,14 +6,18 @@
 
 package main;
 
-
-public class RegisRPG {
+/**
+ *
+ * @author Dalen
+ */
+public class main {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
-        
+        gui.gui();
         ld.load();
     }
     

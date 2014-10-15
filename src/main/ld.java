@@ -25,8 +25,8 @@ public class ld {
                 
                 System.out.println("Created by Regis_DeVallis");
                 
-                System.out.println("Version 0.0.0.1");
-                
+                System.out.println("Version 0.0.0.4");
+             
                 System.out.println("Press 1 and Enter to continue.");
                 
                 scn.scan();

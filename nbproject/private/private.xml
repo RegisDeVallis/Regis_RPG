@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/slp.java</file>
-            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/sv.java</file>
-            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/explr.java</file>
-            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/str.java</file>
+            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/RegisRPG.java</file>
             <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/ld.java</file>
-            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/qst.java</file>
+            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/gui.java</file>
+            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/glblVar.java</file>
+            <file>file:/C:/Users/Dalen/Documents/GitHub/Regis_RPG/src/main/ext.java</file>
         </group>
     </open-files>
 </project-private>
