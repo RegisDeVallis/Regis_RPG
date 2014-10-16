@@ -14,10 +14,7 @@ import javax.swing.text.DefaultCaret;
 
 
 
-/**
- *
- * @author Dalen
- */
+
 public class gui {
     private static String printUsrInput;
     
@@ -59,14 +56,7 @@ public class gui {
         usrInput.setSize(350, 25);
         frame.getRootPane().setDefaultButton(enter);
         
-        //frame.getContentPane().add(console); 
-        //frame.getContentPane().add(scroll);
-        //frame.getContentPane().add(usrInput); 
-        //frame.getContentPane().add(enter); 
-        //frame.getContentPane().add(healthDisp); 
-        //frame.getContentPane().add(moneyDisp); 
-        //frame.getContentPane().add(levelDisp); 
-        //frame.getContentPane().add(xpDisp);  
+         
         
         frame.pack();
         frame.setSize(600, 400);

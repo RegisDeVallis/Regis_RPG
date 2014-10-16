@@ -14,18 +14,19 @@ public class ld {
 		
 		for(int i = 1; i<101; i++) {
 			System.out.println("Loading " + i +"%");
+                        Thread.sleep(1);
 			
 		}
 		
-		System.out.println("#####################");
-		System.out.println("#                   #");
+		System.out.println("###############");
+		System.out.println("#                              #");
 		System.out.println("#     Regis RPG     #");
-		System.out.println("#                   #");
-		System.out.println("#####################");
+		System.out.println("#                               #");
+		System.out.println("###############");
                 
                 System.out.println("Created by Regis_DeVallis");
                 
-                System.out.println("Version 0.0.0.4");
+                System.out.println("Version 0.0.1");
              
                 System.out.println("Press 1 and Enter to continue.");
                 

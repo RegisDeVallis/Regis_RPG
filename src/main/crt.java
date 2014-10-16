@@ -16,10 +16,12 @@ public class crt {
 		
 		System.out.println("What is your name?");
 		
+                scn.scan();
 		glblVar.name = glblVar.answer;
 
 		System.out.println("What is your age?");
 		
+                scn.scan();
 		glblVar.age = glblVar.answer;
 		
 		System.out.println("Are you male or female?");

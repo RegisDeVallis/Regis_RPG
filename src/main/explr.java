@@ -31,6 +31,7 @@ public class explr {
 		//north
 		if(glblVar.answer .equals("1")) {
 			dir.directionN();
+                        exploreActions();
 			
 			
 		}
@@ -38,16 +39,19 @@ public class explr {
 		//south
 		else if(glblVar.answer .equals("2")) {
 			dir.directionS();
+                        exploreActions();
 		}
 		
 		//east
 		else if(glblVar.answer .equals("3")) {
 			dir.directionE();
+                        exploreActions();
 		}
 		
 		//west
 		else if(glblVar.answer .equals("4")) {
 			dir.directionW(); 
+                        exploreActions();
 		}
 		
 		
