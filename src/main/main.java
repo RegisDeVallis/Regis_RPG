@@ -6,10 +6,7 @@
 
 package main;
 
-/**
- *
- * @author Dalen
- */
+
 public class main {
 
     /**

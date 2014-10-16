@@ -11,12 +11,12 @@ public class glblVar {
 	public static String sex;
 	public static int money;
 	public static int health = level * 100;
-	public static int age;
+	public static String age;
 	public static int food;
 	public static int xp;
 	public static int hunger;
 	public static int energy;
-	public static int damage;
+	public static int attack;
 	public static int armor;
 	public static int playerStats = health + armor;
 			

@@ -13,18 +13,16 @@ import java.util.Scanner;
  */
 public class askyn {
     
-    public static void askYesNo() {
+    public static void askYesNo() throws InterruptedException {
         
         String yesNoNum;
        
         System.out.println("1: Yes");
         System.out.println("2: No");
         
-        Scanner scanYesNo = new Scanner(System.in);
-		
-	yesNoNum = scanYesNo.next();
+        scn.scan();
         
-        if (yesNoNum .equals ("1")) {
+        if (glblVar.answer .equals ("1")) {
         
             glblVar.yesno = true;
     }

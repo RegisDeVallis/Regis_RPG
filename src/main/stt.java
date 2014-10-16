@@ -41,7 +41,7 @@ public class stt {
 		
 		
 		//strength
-		System.out.println("Your strength is " + glblVar.damage + ".");
+		System.out.println("Your attack is " + glblVar.attack + ".");
 		
 		//armor
 		System.out.println("Your armor is " + glblVar.armor + ".");

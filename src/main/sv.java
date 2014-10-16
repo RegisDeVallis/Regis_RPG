@@ -43,7 +43,7 @@ public class sv {
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");
 		save.writeObject(glblVar.energy);savePcnt++;
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");
-		save.writeObject(glblVar.damage);savePcnt++;
+		save.writeObject(glblVar.attack);savePcnt++;
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");
 		save.writeObject(glblVar.armor);savePcnt++;
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");

@@ -111,7 +111,7 @@ public class str {
 		
 		//damage upgrade
 		if (glblVar.answer .equals("2")) {
-			int damageLevel = glblVar.damage/5;
+			int damageLevel = glblVar.attack/5;
 			int futureDamageLevel = damageLevel++;
 			int damageUpgrade$ = damageLevel * 200;
 			
@@ -130,7 +130,7 @@ public class str {
 					damageLevel++;
 					glblVar.armor = damageLevel*5;
 					
-					System.out.println("Your damage is " + glblVar.damage + ".");
+					System.out.println("Your damage is " + glblVar.attack + ".");
 					System.out.println("You have $" + glblVar.money + " left.");
 					
 					str.store();

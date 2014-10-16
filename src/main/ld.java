@@ -55,12 +55,12 @@ public class ld {
 		glblVar.sex = (String) save.readObject();
 		glblVar.money = (int) save.readObject();
 		glblVar.health = (int) save.readObject();
-		glblVar.age = (int) save.readObject();
+		glblVar.age = (String) save.readObject();
 		glblVar.level = (int) save.readObject();
 		glblVar.xp = (int) save.readObject();
 		glblVar.hunger = (int) save.readObject();
 		glblVar.energy = (int) save.readObject();
-		glblVar.damage = (int) save.readObject();
+		glblVar.attack = (int) save.readObject();
 		glblVar.armor = (int) save.readObject();
 		glblVar.town = (String) save.readObject();
 		glblVar.inTown = (boolean) save.readObject();

@@ -16,11 +16,11 @@ public class crt {
 		
 		System.out.println("What is your name?");
 		
-		glblVar.name = scan.next();
+		glblVar.name = glblVar.answer;
 
 		System.out.println("What is your age?");
 		
-		glblVar.age = scan.nextInt();
+		glblVar.age = glblVar.answer;
 		
 		System.out.println("Are you male or female?");
 		System.out.println("1: Male");
@@ -46,7 +46,7 @@ public class crt {
 		glblVar.health = 100;
 		glblVar.level = 1;
 		glblVar.xp = 0;
-		glblVar.damage = 10;
+		glblVar.attack = 10;
 		glblVar.armor = 10;
 		glblVar.hunger = 100;
 		glblVar.food = 50;
