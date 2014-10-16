@@ -85,13 +85,18 @@ public class gui {
         
         enter.addActionListener(new ActionListener() {
             
+            
             public void actionPerformed(ActionEvent arg0) {
                 
                 
                 String printUsrInput = usrInput.getText();
-                System.out.println(printUsrInput);
+                
                 glblVar.answer = printUsrInput;
+                System.out.println(glblVar.answer);
+                glblVar.ifAnswer = true;
+                
                 usrInput.setText("");
+                
                 
                 
             }
