@@ -1,12 +1,19 @@
 package main;
 
 import java.util.Scanner;
+import static main.gui.gui;
 
 public class scn {
-	public static void scan() {
+	public static void scan()  {
 		
-		Scanner scanMain = new Scanner(System.in);
-		
-		glblVar.answer = scanMain.next();
+		glblVar.answer = (" ");
+                
+                glblVar.ifAnswer = false;
+                
+                while (glblVar.answer .equals("")) {
+                    
+                }
+                
 	}
 }
+

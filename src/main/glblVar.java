@@ -45,6 +45,7 @@ public class glblVar {
 	public static String saveName;
         public static boolean yesno;
         public static String console;
+        public static boolean ifAnswer;
 	
 	
 	

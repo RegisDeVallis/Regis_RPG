@@ -7,6 +7,8 @@
 package main;
 
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
 
@@ -17,6 +19,7 @@ import javax.swing.text.DefaultCaret;
  * @author Dalen
  */
 public class gui {
+    private static String printUsrInput;
     
     public static void gui() {
         
@@ -33,14 +36,16 @@ public class gui {
         JPanel outerPanel = new JPanel(new BorderLayout());
         JPanel topPanel = new JPanel(new BorderLayout());
         JPanel mainPanel = new JPanel(new BorderLayout());
+        JPanel bottomPanel = new JPanel(new BorderLayout());
         
         
         TextAreaOutputStream taos = TextAreaOutputStream.getInstance(console);
         
         frame.add(outerPanel);
         
-        outerPanel.add(topPanel, BorderLayout.BEFORE_FIRST_LINE);
+        outerPanel.add(topPanel, BorderLayout.PAGE_START);
         outerPanel.add(mainPanel, BorderLayout.CENTER);
+        outerPanel.add(bottomPanel, BorderLayout.PAGE_END);
         
         topPanel.add(title, BorderLayout.BEFORE_LINE_BEGINS);
         topPanel.setSize(600, 25);
@@ -49,7 +54,10 @@ public class gui {
         mainPanel.add(scroll, BorderLayout.CENTER);
         scroll.setSize(400, 400);
         
-        
+        bottomPanel.add(usrInput, BorderLayout.CENTER);
+        bottomPanel.add(enter, BorderLayout.AFTER_LINE_ENDS);
+        usrInput.setSize(350, 25);
+        frame.getRootPane().setDefaultButton(enter);
         
         //frame.getContentPane().add(console); 
         //frame.getContentPane().add(scroll);
@@ -70,6 +78,24 @@ public class gui {
         autoscroll.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
         
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        
+        
+        
+        
+        
+        enter.addActionListener(new ActionListener() {
+            
+            public void actionPerformed(ActionEvent arg0) {
+                
+                
+                String printUsrInput = usrInput.getText();
+                System.out.println(printUsrInput);
+                glblVar.answer = printUsrInput;
+                usrInput.setText("");
+                
+                
+            }
+        });
 
         
     }
