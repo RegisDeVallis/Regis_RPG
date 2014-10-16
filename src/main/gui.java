@@ -6,6 +6,7 @@
 
 package main;
 
+import java.awt.BorderLayout;
 import javax.swing.*;
 import javax.swing.text.DefaultCaret;
 
@@ -19,7 +20,8 @@ public class gui {
     
     public static void gui() {
         
-        JFrame jframe = new JFrame("Regis RPG");
+        JFrame frame = new JFrame("Regis RPG");
+        JLabel title = new JLabel("Regis RPG");
         JTextArea console = new JTextArea();
         JTextField usrInput = new JTextField();
         JButton enter = new JButton("Enter");
@@ -28,25 +30,46 @@ public class gui {
         JLabel levelDisp = new JLabel("Level: " + glblVar.level);
         JLabel xpDisp = new JLabel("xp: " + glblVar.xp);
         JScrollPane scroll = new JScrollPane(console);
+        JPanel outerPanel = new JPanel(new BorderLayout());
+        JPanel topPanel = new JPanel(new BorderLayout());
+        JPanel mainPanel = new JPanel(new BorderLayout());
         
-        TextAreaOutputStream taos = TextAreaOutputStream.getInstance(console); 
         
-        jframe.getContentPane().add(console); 
-        //jframe.getContentPane().add(scroll);
-        //jframe.getContentPane().add(usrInput); 
-        //jframe.getContentPane().add(enter); 
-        //jframe.getContentPane().add(healthDisp); 
-        //jframe.getContentPane().add(moneyDisp); 
-        //jframe.getContentPane().add(levelDisp); 
-        //jframe.getContentPane().add(xpDisp);  
+        TextAreaOutputStream taos = TextAreaOutputStream.getInstance(console);
         
-        jframe.pack();  
-        jframe.show();
+        frame.add(outerPanel);
+        
+        outerPanel.add(topPanel, BorderLayout.BEFORE_FIRST_LINE);
+        outerPanel.add(mainPanel, BorderLayout.CENTER);
+        
+        topPanel.add(title, BorderLayout.BEFORE_LINE_BEGINS);
+        topPanel.setSize(600, 25);
+        
+        
+        mainPanel.add(scroll, BorderLayout.CENTER);
+        scroll.setSize(400, 400);
+        
+        
+        
+        //frame.getContentPane().add(console); 
+        //frame.getContentPane().add(scroll);
+        //frame.getContentPane().add(usrInput); 
+        //frame.getContentPane().add(enter); 
+        //frame.getContentPane().add(healthDisp); 
+        //frame.getContentPane().add(moneyDisp); 
+        //frame.getContentPane().add(levelDisp); 
+        //frame.getContentPane().add(xpDisp);  
+        
+        frame.pack();
+        frame.setSize(600, 400);
+        console.setEditable(false);
+        scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        frame.show();
         
         DefaultCaret autoscroll = (DefaultCaret)console.getCaret();
         autoscroll.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
         
-        jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         
     }
