@@ -19,6 +19,8 @@ public class glblVar {
 	public static int attack;
 	public static int armor;
 	public static int playerStats = health + armor;
+        public static int counterAttack;
+        public static int block;
 			
 	
 	//user location

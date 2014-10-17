@@ -52,10 +52,13 @@ public class crt {
 		glblVar.armor = 10;
 		glblVar.hunger = 100;
 		glblVar.food = 50;
+                glblVar.counterAttack = 10;
+                glblVar.block = 10;
 		glblVar.FINDansterdell = true;
 		glblVar.FINDhighcrest = false;
 		glblVar.FINDlochwell = false;
 		glblVar.FINDshadowridge = false;
+                sv.save();
 		twn.townAnsterdell();
 		
 		

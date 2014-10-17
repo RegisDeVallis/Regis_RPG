@@ -107,6 +107,7 @@ public class mnu {
 		//save 
 		if(glblVar.answer .equals("s")) {
 			sv.save();
+                        mnu.Menu();
 		}
 		
 		//quit

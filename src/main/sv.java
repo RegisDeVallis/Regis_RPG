@@ -16,7 +16,7 @@ public class sv {
 	public static void save() throws Exception  {
 		
 		int savePcnt = 0;
-		int saveTotal = 30;
+		int saveTotal = 32;
 		
 		System.out.println("Saving.");
 		System.out.println("This may take awhile.");
@@ -28,7 +28,7 @@ public class sv {
 		
 		ObjectOutputStream save = new ObjectOutputStream(saveFile);
 		
-		//30 
+		//32
 		//saves
 		
 		//save.writeObject(glblVar);
@@ -105,7 +105,13 @@ public class sv {
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");progressBar.setValue(savePcnt / saveTotal); progressBar.updateUI();Thread.sleep(10);
 		save.writeObject(glblVar.direction);savePcnt++;
 		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");progressBar.setValue(savePcnt / saveTotal); progressBar.updateUI();Thread.sleep(10);
+                save.writeObject(glblVar.counterAttack);savePcnt++;
+		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");progressBar.setValue(savePcnt / saveTotal); progressBar.updateUI();Thread.sleep(10);
+                save.writeObject(glblVar.block);savePcnt++;
+		System.out.println("Saving " + savePcnt + "/" + saveTotal + " obejcts.");progressBar.setValue(savePcnt / saveTotal); progressBar.updateUI();Thread.sleep(10);
 		
+                
+                
 		System.out.println("Saved!");
                 
                 f.dispose();

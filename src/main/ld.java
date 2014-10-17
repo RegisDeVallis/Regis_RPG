@@ -81,9 +81,12 @@ public class ld {
 		glblVar.FINDlochwell = (boolean) save.readObject();
 		glblVar.FINDshadowridge = (boolean) save.readObject();
 		glblVar.food = (int) save.readObject();
+                glblVar.counterAttack = (int) save.readObject();
+                glblVar.block = (int) save.readObject();
+                
 		//glblVar = () save.readObject();
 		
-		mnu.Menu();
+		
 		
 		
 		

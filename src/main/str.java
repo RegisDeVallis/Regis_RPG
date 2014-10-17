@@ -62,107 +62,97 @@ public class str {
 		
 	}
 
-	private static void upgrade() throws Exception {
-		System.out.println("What do you want to upgrade?");
-		System.out.println("1: Armor");
-		System.out.println("2: Damage");
-		System.out.println("3: Exit Store");
-		
-		scn.scan();
-		
-		//armor upgrade
-		if (glblVar.answer .equals("1")) {
-			int armorLevel = glblVar.armor / 5;
-			int futureArmorLevel = armorLevel++;
-			int armorUpgrade$ = armorLevel * 200;
-			
-			if (glblVar.money > armorUpgrade$) {
-				System.out.println("You have enough money.");
-				System.out.println("It will cost $" + armorUpgrade$ + ".");
-				System.out.println("Do you want to upgrade your armor to level " + futureArmorLevel + "?");
-				
-				
-				askyn.askYesNo();
-				
-				if(glblVar.yesno = true) {
-					System.out.println("Upgraded your armor!");
-					
-					glblVar.money = glblVar.money - armorUpgrade$;
-					armorLevel++;
-					glblVar.armor = armorLevel*5;
-					
-					System.out.println("Your armor is " + glblVar.armor + ".");
-					System.out.println("You have $" + glblVar.money + " left.");
-					
-					str.store();
-					
-					
-				}
-				
-                                else {
-					ask();
-				}
-			}
-			else {
-				System.out.println("You do not have enough money.");
-				ask();
-			}
-		}
-		
-		//damage upgrade
-		if (glblVar.answer .equals("2")) {
-			int damageLevel = glblVar.attack/5;
-			int futureDamageLevel = damageLevel++;
-			int damageUpgrade$ = damageLevel * 200;
-			
-			if(glblVar.money > damageUpgrade$) {
-				
-				System.out.println("You have enough money.");
-				System.out.println("It will cost $" + damageUpgrade$ + ".");
-				System.out.println("Do you want to upgrade your damage to level " + futureDamageLevel + "?");
-				
-                                askyn.askYesNo();
-				
-				if(glblVar.yesno = true) {
-					System.out.println("Upgraded your damage!");
-					
-					glblVar.money = glblVar.money - damageUpgrade$;
-					damageLevel++;
-					glblVar.armor = damageLevel*5;
-					
-					System.out.println("Your damage is " + glblVar.attack + ".");
-					System.out.println("You have $" + glblVar.money + " left.");
-					
-					str.store();
-					
-					
-				}
-				
-				else {
-					ask();
-				}
-			}
-			else {
-				System.out.println("You do not have enough money.");
-				ask();
-			}
-			
-		}
-		
-		//exit
-		if (glblVar.answer .equals("3")) {
-                    
-                    str.ask();
-			
-		}
-	}
+    private static void upgrade() throws Exception {
+        System.out.println("What do you want to upgrade?");
+        System.out.println("1: Armor");
+        System.out.println("2: Train");
+        System.out.println("3: Exit Store");
+
+        scn.scan();
+
+        //armor upgrade
+        if (glblVar.answer .equals("1")) {
+                int armorLevel = glblVar.armor / 5;
+                int futureArmorLevel = armorLevel++;
+                int armorUpgrade$ = armorLevel * 200;
+
+                if (glblVar.money > armorUpgrade$) {
+                        System.out.println("You have enough money.");
+                        System.out.println("It will cost $" + armorUpgrade$ + ".");
+                        System.out.println("Do you want to upgrade your armor to level " + futureArmorLevel + "?");
+
+
+                        askyn.askYesNo();
+
+                        if(glblVar.yesno = true) {
+                                System.out.println("Upgraded your armor!");
+
+                                glblVar.money = glblVar.money - armorUpgrade$;
+                                armorLevel++;
+                                glblVar.armor = armorLevel*5;
+
+                                System.out.println("Your armor is " + glblVar.armor + ".");
+                                System.out.println("You have $" + glblVar.money + " left.");
+
+                                str.store();
+
+
+                        }
+
+                        else {
+                                ask();
+                        }
+                }
+                else {
+                        System.out.println("You do not have enough money.");
+                        ask();
+                }
+        }
+
+        //damage upgrade
+        if (glblVar.answer .equals("2")) {
+
+            System.out.println("What do you want to train?");
+            System.out.println("1: Attack");
+            System.out.println("2: Counter Attack");
+            System.out.println("3: Block");
+            System.out.println("4: Exit");
+
+            scn.scan();
+
+            //attack
+            if (glblVar.answer .equals("1")) {
+                
+                //int 
+                System.out.println("You want to train your attack skill?");
+                
+
+            }
+
+            //counter attack
+            if (glblVar.answer .equals("2")) {
+
+            }
+
+            //block
+            if (glblVar.answer .equals("3")) {
+
+
+            }
+        //exit
+        if (glblVar.answer .equals("3")) {
+
+            str.ask();
+
+        }
+        }
+    }
 
 	private static void item() throws Exception {
 		
             System.out.println("WIP");
             str.ask();
-		
-	}
+        }
 
 	private static void food() throws Exception {
 		Scanner scan = new Scanner(System.in);
@@ -175,7 +165,7 @@ public class str {
                 askyn.askYesNo();
 		
 		//yes
-		if(glblVar.yesno = true) {
+		if(glblVar.yesno == true) {
 			
 			System.out.println("Packs of food come in 10.");
 			System.out.println("1 pack equals 10 food and 50 coins.");
@@ -200,7 +190,7 @@ public class str {
 				
                                 askyn.askYesNo();
 				
-				if(glblVar.yesno = true) {
+				if(glblVar.yesno == true) {
 					System.out.println("You bought " + packToBuy + " packs of food!");
 					
 					glblVar.food = glblVar.food + (packToBuy*10);
